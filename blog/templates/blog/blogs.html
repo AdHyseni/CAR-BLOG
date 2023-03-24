@@ -115,6 +115,24 @@
 	</div>
 </section>
 <section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="lc-block">
+					<span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
+					<h2 editable="inline" class="display-2 mb-0"><b>Features</b></h2>
+					<p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id <br>ligula malesuada placerat sit amet quis enim.</p>
+				</div><!-- /lc-block -->
+			</div>
+		</div>
+		{% for blog in blogs  %}
+		
+		{% include 'blog/include/blog.html' %}
+		
+		{% endfor %}
+	</div>
+</section>
+<section>
 	<div class="container text-center py-4">
 		<div class="card card-body border-0 mb-4 lc-block">
 			<div class="lc-block mb-4">

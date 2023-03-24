@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block titulli %}CAR|{% endblock  %}
+{% block kontent %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 offset-md-1">
+			<div class="lc-block" style="">
+				<img class="img-fluid" src="{{blog.foto.url}}" alt="Photo by João Silas" style="
+width:100%">
+			</div><!-- /lc-block -->
+		</div><!-- /col -->
+	</div>
+	<div class="row mt-4">
+		<div class="col-md-10 offset-md-1 px-4">
+			<div class="lc-block  mb-4">
+				<div editable="rich">
+					<h2>{{blog.titulli}}</h2>
+				</div>
+			</div>
+
+			<!-- /lc-block -->
+		</div><!-- /col -->
+	</div>
+	<div class="row">
+		<div class="col-md-5   offset-md-1">
+			<div class="lc-block text-secondary">
+				<div editable="rich">
+					<p> 
+                        {{blog.tekst}}
+					</p>
+				</div>
+			</div><!-- /lc-block -->
+		</div><!-- /col -->
+	</div>
+</div>
+
+{% endblock  %}

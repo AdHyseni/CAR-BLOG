@@ -1,0 +1,14 @@
+{% load static %}
+<div class="col-md-4">
+    <div class="p-lg-5 p-4 shadow">
+        <div class="lc-block mb-4"><img alt="" class="img-fluid" src="{{blog.foto.url}}">
+
+
+            <h4 class="my-3" editable="inline"></h4>
+            <p editable="inline">{{blog.titulli}}&nbsp;</p>
+
+
+            <a class="btn btn-outline-primary" href="{% url 'blog' blog.slug %}" role="button">Read more</a>
+        </div><!-- /lc-block -->
+    </div>
+</div><!-- /col -->
