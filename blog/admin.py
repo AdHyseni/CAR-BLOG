@@ -4,3 +4,4 @@ from .models import *
 admin.site.register(Kategori)
 admin.site.register(Autori)
 admin.site.register(Blog)
+admin.site.register(Comments)

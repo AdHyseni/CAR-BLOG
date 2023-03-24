@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # crispy forms
+    'crispy_forms',
+    'crispy_bootstrap4',
 
     #Aplikacionet e krijuara
     'blog',
@@ -54,6 +57,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'car_blog.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

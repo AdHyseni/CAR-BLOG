@@ -32,6 +32,15 @@ class Blog(models.Model):
 
     def __str__(self) -> str:
         return f'{self.titulli}'
+    
+class Comments(models.Model):
+    user_name = models.CharField(max_length=120)
+    user_email = models.EmailField()
+    text = models.TextField(max_length=400)
+    post = models.ForeignKey(Blog, on_delete=models.CASCADE, related_name='comments')
+
+    def __str__(self) -> str:
+        return f'{self.user_name} {self.post}'
 
 
 
